@@ -23,7 +23,7 @@ body{
     font-weight: 400;
 }
 .title {
-    padding-top: 100px;
+    padding-top: 105px;
     padding-bottom:70px;
     text-align: center;
 }
@@ -54,24 +54,39 @@ body{
     
 }
 #header.fixed{
-    /* background-color: #082C3B; */
     position: fixed;
     top: 0;
     width: 100%;
     transition: all 0.4s ease;
     z-index: 999;
+    background-image: url(../img/logo_Ocean\ Inside\ me.png);
     background: rgba(5, 43, 59, 0.75);
 }
 #header.default{
     width: 100%;
 }
-
+.header a{
+    font-family: 'Pinyon Script';
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    line-height: 0.7;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.header span{
+    font-family: 'Josefin', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    color: white;
+    
+}
 .menu{
-    /* position: relative; */
     list-style-type: none;
     display: flex;
     float: right;
-    margin-top: 10px;
+    margin-top: 10px;  
 }
 .menu__item{
     margin: 10px;
@@ -86,6 +101,7 @@ body{
     font-size: 14px;
     font-weight: 700;
     color: white;
+    font-family: 'PT Sans', sans-serif;
 }
 .menu__item a:hover{
     background-color: #82EE49;
@@ -131,7 +147,7 @@ body{
 .advertising__text span{
     color: #82EE49;
 }
-.advertising a.header-btn{
+.advertising a.animated{
     padding: 1.5em 2em;
     display: inline-block;
     font-size: 20px;
@@ -140,8 +156,9 @@ body{
     border: 4px solid #82EE49;
     transition: all 0.4s ease;
     color: #5BC9FF;
+    text-decoration: none;
 }
-.advertising a.header-btn:hover{
+.advertising a.animated:hover{
     background-color: #82EE49;
     transition: all 0.4s ease;
     color: #082C3B;
@@ -161,6 +178,21 @@ body{
     height: 100%;
     object-fit: cover;
     object-position: center;
+    filter: contrast(2.3);
+}
+.advertising-wrap {
+    position: relative;
+}
+.advertising-wrap:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(114, 112, 112, 0.5);
+    z-index: 1;
 }
     
 /* .wrapper{    
@@ -181,7 +213,7 @@ body{
 } */
 .wrapper{
     width: 100%;
-    height: 700px;
+    /* height: 700px; */
     display: flex;
     box-sizing: border-box;
     /* background-image: url(../img/bg_2screen.jpeg);
@@ -189,7 +221,7 @@ body{
     background-size: cover;
     overflow: hidden; */
     position: relative;
-    position: sticky;
+    /* position: sticky; */
     top: 0;
 }
 .wrapper__header{
@@ -200,9 +232,9 @@ body{
 
 /* Второй экран */
 
-.wrapper{
+.box{
     width: 100%;
-    height: 700px;
+    /* height: 700px; */
     display: flex;
     box-sizing: border-box;
     /* padding: 130px 0px; */
@@ -214,13 +246,13 @@ body{
     /* position: sticky; */
     top: 0;
 }
-.wrapper__offer{
+.box__offer{
     width: 100%;
     height: 100%;
     background-color: rgb(91, 201, 255, 0.5);
 }
 .offer {
-    margin-top: 120px;
+    margin-top: 80px;
     text-align: center;
 }
 .offer__title {
@@ -256,7 +288,7 @@ body{
     color: #5BC9FF;
 }
 
-/* Четвертый экран */
+/* Третий экран */
 
 .partners{
     width: 100%;
@@ -298,6 +330,23 @@ body{
 .feature__text {
     color: white;
     font-size: 16px;
+    
+}
+
+/* Четвертый экран */
+
+.slider img{
+    max-width: 100%;
+    height: 121px;
+}
+.crousel .crousel__tittle{
+    font-size: 36px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+    top: 0;
 }
 
 /* Пятый экран */
@@ -308,7 +357,7 @@ body{
     display: flex;
     box-sizing: border-box;
     /* padding: 130px 0px; */
-    background-image: url(../img/bg_4screen.jpg);
+    background-image: url(../img/bg_5screen.jpg);
     background-attachment: fixed;
     background-size: cover;
     overflow: hidden;
@@ -346,15 +395,34 @@ body{
 
 /* Шестой экран */
 
+.connections{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    box-sizing: border-box;
+    /* padding: 130px 0px; */
+    background-image: url(../img/rawpixel-661924-unsplash.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    /* position: sticky; */
+    top: 0;
+}
+.connections__elements{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(91, 201, 255, 0.5);
+}
+.title .title__text{
+    color: white;
+}
 .touch {
-    background: #010101;
     color: #fff;
 }
-
 .form {
     text-align: center;
 }
-
 .form__input {
     background: #fff;
     font-size: 16px;
@@ -367,11 +435,10 @@ body{
     padding-left:23px;
     outline: none;
 }
-
-.form__btn {
+.form .animated {
     font-family: 'PT Sans', sans-serif;
-    background: #fcdb00;
-    color: #000;
+    background: #82EE49;
+    color: white;
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 700;
@@ -381,4 +448,22 @@ body{
     padding: 14px 0;
     cursor: pointer;
     outline: none;
+}
+.form button.animated:hover{
+    background: #5BC9FF;
+    color:#082C3B;
+}
+/* Седьмой экран */
+
+.footer {
+    background: #082C3B;
+    padding:50px 0 94px;
+}
+
+.credits {
+    color: #fff;
+    font-size: 16px;
+    width: 184px;
+    margin: 0 auto;
+    text-align: center;
 }
