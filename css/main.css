@@ -335,6 +335,10 @@ body{
 
 /* Четвертый экран */
 
+.slider{
+    margin-bottom: 10px;
+}
+
 .slider img{
     max-width: 100%;
     height: 121px;
@@ -457,13 +461,27 @@ body{
 
 .footer {
     background: #082C3B;
-    padding:50px 0 94px;
-}
-
-.credits {
-    color: #fff;
-    font-size: 16px;
-    width: 184px;
+    padding: 15px 0 15px;
     margin: 0 auto;
-    text-align: center;
+}
+.social {
+    list-style-type: none;
+}
+.social__item {
+    display: inline-block;
+    margin-right:30px;
+}
+.social a{
+    font-size: 42px;
+    transition: all 0.3s ease;
+    color: white;
+}
+.social__item a:hover {
+    text-decoration: none;
+    color: #5BC9FF;
+}
+.rights p{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
 }
