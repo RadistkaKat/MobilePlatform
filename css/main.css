@@ -4,7 +4,7 @@ body{
     font-family: 'PT Sans', sans-serif;
     font-size: 14px;
     line-height: 1.8;
-    
+    overflow-x: hidden;
 }
 .ul, .li {
     margin-right: 0;
@@ -292,7 +292,7 @@ body{
 
 .partners{
     width: 100%;
-    height: 700px;
+    /* height: 700px; */
     display: flex;
     box-sizing: border-box;
     /* padding: 130px 0px; */
@@ -310,7 +310,7 @@ body{
     background-color: rgba(114, 112, 112, 0.7);
 }
 .feature {
-    margin-bottom: 65px;
+    margin-bottom: 30px;
 }
 
 .feature__icon {
@@ -357,7 +357,7 @@ body{
 
 .developers{
     width: 100%;
-    height: 700px;
+    /* height: 700px; */
     display: flex;
     box-sizing: border-box;
     /* padding: 130px 0px; */
@@ -371,11 +371,11 @@ body{
 }
 .developers__elements{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     background-color: rgba(114, 112, 112, 0.7);
 }
 .elements {
-    margin-bottom: 65px;
+    margin-bottom: 20px;
 }
 
 .elements__icon {
@@ -467,9 +467,13 @@ body{
 .social {
     list-style-type: none;
 }
+.ul.social__item{
+    
+}
 .social__item {
     display: inline-block;
     margin-right:30px;
+    margin-bottom: 0px;
 }
 .social a{
     font-size: 42px;
